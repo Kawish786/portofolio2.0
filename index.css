@@ -1,0 +1,221 @@
+.navbar{
+    box-shadow: 0 0 2px 0 white;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+.heads{
+    margin: 7px;
+}
+.navbar-nav{
+    margin: 5px;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: seagreen;
+}
+.logo{
+    width: 80px;
+    height: 60px;
+    margin: 5px;
+}
+.cover{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("black.jpg");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+.head{
+    
+    font-family: poppins, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1.2;
+    font-size: 30px;
+    color: white;
+    margin-top: 5rem;
+    
+
+}
+.head .subhead{
+color: transparent;
+-webkit-text-stroke: 1px white;
+}
+.about{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:50px 30px ;
+    place-items: center;
+    background-color: black;
+    margin-top: 2px;
+}
+.about .div1{
+    overflow: hidden;
+}
+.about .div1 .imgabout{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    object-fit: cover;
+    border-radius: 5%;
+   
+    
+}
+ .imgabout:hover{
+    opacity: 0.5;
+}
+.about.div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+@media screen and (max-width:850px) {
+    .about{
+        grid-template-columns: 1fr;
+    }
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 100px 50px;
+    padding: 100px 50px; */
+}
+
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background-image: url("leaf.jpeg");
+    object-fit: cover;
+    /* background-image: linear-gradient(to right top, #a9a8bb, #c6aac5, #e9aabc, #ffb0a3, #ffc087, #ecc37d, #d7c677, #bfc978, #abb777, #98a476, #889274, #797f70); */
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container .card:hover {
+    height: 350px;
+    cursor: pointer;
+}
+/* .container:hover > :not(:hover){
+    opacity: 0.2;
+    
+} */
+
+.container .card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 170px;
+    height: 170px;
+    background: #333;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.container .card .content a:hover {
+    opacity: 0.8;
+}
+
+
+@media (max-width: 480px) {
+    .container .card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .container .card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .container .card .content p {
+        font-size: 0.8rem;
+    }
+
+    .container .card .content a {
+        font-size: 0.9rem;
+    }
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+li{
+    color: whitesmoke;
+}
+li:hover{
+    color: seagreen;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+.list{
+    display: flex;
+    list-style: none;
+    list-style-type: none;
+}
+.item{
+    margin: 10px;
+
+}
