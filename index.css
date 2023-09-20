@@ -132,12 +132,14 @@ color: transparent;
     border-radius: 50%;
     object-fit: cover;
     overflow: hidden;
-    transition: 0.5s;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transition: 0.5s ease;
 }
 
 .container .card:hover .img-box {
     top: -100px;
-    scale: 0.75;
+    /* scale: 0.75; */
+    clip-path: circle(50% at 50% 50%);
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
 
